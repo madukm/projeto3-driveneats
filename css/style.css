@@ -100,11 +100,13 @@ p {
     
 }
 
-.dish-display .line::-webkit-scrollbar {
+/* .dish-display .line::-webkit-scrollbar,
+.drink-display .line::-webkit-scrollbar,
+.dessert-display .line::-webkit-scrollbar {
     display: none;
-} 
+}  */
 
-.dish {
+.product {
     width: 172px;
     height: 216px;
     background-color: #FFFFFF;
@@ -112,10 +114,11 @@ p {
     flex-direction: column;
     align-items: center;
     border-radius: 9px;
+    border: 5px solid white;
     padding: 11px 14px;
 }
 
-.dish img {
+.product img {
     width: 144px;
     height: 87px;
     border-radius: 4px;

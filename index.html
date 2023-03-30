@@ -19,7 +19,7 @@
       <div class="dish-display">
         <h2>Primeiro, seu prato</h2>
         <div class="line">
-          <div class="dish">
+          <div class="product" id="first-dish" onclick="selectFirstDish()">
             <img src="img/frango_yin_yang.png"/>
             <div class="flex-start">
               <h5>Frango Yin Yang</h5>
@@ -27,7 +27,7 @@
               <h6> R$ 14,90 </h6>
             </div>
           </div>
-          <div class="dish">
+          <div class="product" id="second-dish" onclick="selectSecondDish()">
             <img src="img/frango_yin_yang.png"/>
             <div class="flex-start">
               <h5>Frango Yin Yang</h5>
@@ -35,7 +35,7 @@
               <h6> R$ 14,90 </h6>
             </div>
           </div>
-          <div class="dish">
+          <div class="product" id="third-dish" onclick="selectThirdDish()">
             <img src="img/frango_yin_yang.png"/>
             <div class="flex-start">
               <h5>Frango Yin Yang</h5>
@@ -49,7 +49,7 @@
       <div class="drink-display">
         <h2>Agora, sua bebida</h2>
         <div class="line">
-          <div class="dish">
+          <div class="product" id="first-drink" onclick="selectFirstDrink()">
             <img src="img/coca-cola.png"/>
             <div class="flex-start">
               <h5>Coquinha gelada</h5>
@@ -57,7 +57,7 @@
               <h6> R$ 4,90 </h6>
             </div>
           </div>
-          <div class="dish">
+          <div class="product" id="second-drink" onclick="selectSecondDrink()">
             <img src="img/coca-cola.png"/>
             <div class="flex-start">
               <h5>Coquinha gelada</h5>
@@ -65,7 +65,7 @@
               <h6> R$ 4,90 </h6>
             </div>
           </div>
-          <div class="dish">
+          <div class="product" id="third-drink" onclick="selectThirdDrink()">
             <img src="img/coca-cola.png"/>
             <div class="flex-start">
               <h5>Coquinha gelada</h5>
@@ -79,7 +79,7 @@
       <div class="dessert-display">
         <h2>Por fim, sua sobremesa</h2>
         <div class="line">
-          <div class="dish">
+          <div class="product" id="first-dessert" onclick="selectFirstDessert">
             <img src="img/pudim.png"/>
             <div class="flex-start">
               <h5>Pudim</h5>
@@ -87,7 +87,7 @@
               <h6> R$ 7,90 </h6>
             </div>
           </div>
-          <div class="dish">
+          <div class="product" id="second-dessert" onclick="selectSecondDessert">
             <img src="img/pudim.png"/>
             <div class="flex-start">
               <h5>Pudim</h5>
@@ -95,7 +95,7 @@
               <h6> R$ 7,90 </h6>
             </div>
           </div>
-          <div class="dish">
+          <div class="product" id="third-dessert" onclick="selectThirdDessert">
             <img src="img/pudim.png"/>
             <div class="flex-start">
               <h5>Pudim</h5>
@@ -109,10 +109,11 @@
     </div>
     
     <div class="footer">
-      <div class="button">
+      <div class="button" onclick="closeOrder()">
         <h3>Selecione os 3 itens <br/> para fechar o pedido</h3>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 
 </html>
