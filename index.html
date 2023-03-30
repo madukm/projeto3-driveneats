@@ -79,7 +79,7 @@
       <div class="dessert-display">
         <h2>Por fim, sua sobremesa</h2>
         <div class="line">
-          <div class="product" id="first-dessert" onclick="selectFirstDessert">
+          <div class="product" id="first-dessert" onclick="selectFirstDessert()">
             <img src="img/pudim.png"/>
             <div class="flex-start">
               <h5>Pudim</h5>
@@ -87,7 +87,7 @@
               <h6> R$ 7,90 </h6>
             </div>
           </div>
-          <div class="product" id="second-dessert" onclick="selectSecondDessert">
+          <div class="product" id="second-dessert" onclick="selectSecondDessert()">
             <img src="img/pudim.png"/>
             <div class="flex-start">
               <h5>Pudim</h5>
@@ -95,7 +95,7 @@
               <h6> R$ 7,90 </h6>
             </div>
           </div>
-          <div class="product" id="third-dessert" onclick="selectThirdDessert">
+          <div class="product" id="third-dessert" onclick="selectThirdDessert()">
             <img src="img/pudim.png"/>
             <div class="flex-start">
               <h5>Pudim</h5>
@@ -109,9 +109,9 @@
     </div>
     
     <div class="footer">
-      <div class="button" onclick="closeOrder()">
-        <h3>Selecione os 3 itens <br/> para fechar o pedido</h3>
-      </div>
+      <button id="placeOrder" type="button" onclick="sendOrder()" disabled>
+        Selecione os 3 itens <br/> para fechar o pedido
+      </button>
     </div>
     <script src="script.js"></script>
   </body>

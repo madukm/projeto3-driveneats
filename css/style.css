@@ -60,6 +60,18 @@ p {
     color: #A6A6A6;
 }
 
+button {
+    width: 364px;
+    height: 61px;
+    background-color: #CBCBCB;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
 .header, .footer {
     width: 414px;
     height: 92px;
@@ -139,15 +151,4 @@ p {
     justify-content: center;
     align-items: center;
     bottom: 0;
-}
-
-.footer .button {
-    width: 364px;
-    height: 61px;
-    background-color: #CBCBCB;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
