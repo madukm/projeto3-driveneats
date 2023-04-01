@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <link href="css/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     
     <title>Driven Eats</title>
@@ -18,8 +18,8 @@
     <div class="content">
       <div class="dish-display">
         <h2>Primeiro, seu prato</h2>
-        <div class="line">
-          <div class="product" id="first-dish" onclick="selectFirstDish()" data-test="dish">
+        <div class="dish options">
+          <div class="product" onclick="selectDish(this)" data-test="dish">
             <img src="img/frango_yin_yang.png"/>
             <div class="flex-start">
               <h5>Frango Yin Yang</h5>
@@ -27,7 +27,7 @@
               <h6 data-item="item-price"> R$ 14,90 </h6>
             </div>
           </div>
-          <div class="product" id="second-dish" onclick="selectSecondDish()" data-test="dish">
+          <div class="product" onclick="selectDish(this)" data-test="dish">
             <img src="img/frango_yin_yang.png"/>
             <div class="flex-start">
               <h5>Carne Yin Yang</h5>
@@ -35,7 +35,7 @@
               <h6 data-item="item-price"> R$ 18,90 </h6>
             </div>
           </div>
-          <div class="product" id="third-dish" onclick="selectThirdDish()" data-test="dish">
+          <div class="product" onclick="selectDish(this)" data-test="dish">
             <img src="img/frango_yin_yang.png"/>
             <div class="flex-start">
               <h5>Porco Yin Yang</h5>
@@ -48,8 +48,8 @@
   
       <div class="drink-display">
         <h2>Agora, sua bebida</h2>
-        <div class="line">
-          <div class="product" id="first-drink" onclick="selectFirstDrink()" data-test="drink">
+        <div class="line options drink">
+          <div class="product" onclick="selectDrink(this)" data-test="drink">
             <img src="img/coca-cola.png"/>
             <div class="flex-start">
               <h5>Coquinha gelada</h5>
@@ -57,15 +57,15 @@
               <h6 data-item="item-price"> R$ 4,90 </h6>
             </div>
           </div>
-          <div class="product" id="second-drink" onclick="selectSecondDrink()" data-test="drink">
+          <div class="product" onclick="selectDrink(this)"  data-test="drink">
             <img src="img/coca-cola.png"/>
             <div class="flex-start">
-              <h5>FGuaranazinho gelado</h5>
+              <h5>Guaranazinho gelado</h5>
               <p>Lata 350ml</p>
               <h6 data-item="item-price"> R$ 3,90 </h6>
             </div>
           </div>
-          <div class="product" id="third-drink" onclick="selectThirdDrink()" data-test="drink">
+          <div class="product" onclick="selectDrink(this)"  data-test="drink">
             <img src="img/coca-cola.png"/>
             <div class="flex-start">
               <h5>Suquinho gelado</h5>
@@ -78,8 +78,8 @@
 
       <div class="dessert-display">
         <h2>Por fim, sua sobremesa</h2>
-        <div class="line">
-          <div class="product" id="first-dessert" onclick="selectFirstDessert()" data-test="dessert">
+        <div class="line option dessert">
+          <div class="product" onclick="selectDessert(this)" data-test="dessert">
             <img src="img/pudim.png"/>
             <div class="flex-start">
               <h5>Pudim</h5>
@@ -87,7 +87,7 @@
               <h6 data-item="item-price"> R$ 7,90 </h6>
             </div>
           </div>
-          <div class="product" id="second-dessert" onclick="selectSecondDessert()" data-test="dessert">
+          <div class="product" onclick="selectDessert(this)" data-test="dessert">
             <img src="img/pudim.png"/>
             <div class="flex-start">
               <h5>Pudim</h5>
@@ -95,7 +95,7 @@
               <h6 data-item="item-price"> R$ 8,90 </h6>
             </div>
           </div>
-          <div class="product" id="third-dessert" onclick="selectThirdDessert()" data-test="dessert">
+          <div class="product" onclick="selectDessert(this)" data-test="dessert">
             <img src="img/pudim.png"/>
             <div class="flex-start">
               <h5>Pudim</h5>

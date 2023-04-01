@@ -112,6 +112,18 @@ button {
     
 }
 
+.dish {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    gap: 16px;
+}
+
+.selected {
+    border: 5px solid #32B72F;
+}
+
 /* .dish-display .line::-webkit-scrollbar,
 .drink-display .line::-webkit-scrollbar,
 .dessert-display .line::-webkit-scrollbar {
@@ -126,7 +138,6 @@ button {
     flex-direction: column;
     align-items: center;
     border-radius: 9px;
-    border: 5px solid white;
     padding: 11px 14px;
 }
 
