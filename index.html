@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    
+    <title>Driven Eats</title>
+
+    <meta name= "viewport" content= "width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Driven Eats</h1>
+      <h4>Sua comida em 6 minutos</h4>
+    </div>
+    <div class="content">
+      <div class="dish-display">
+        <h2>Primeiro, seu prato</h2>
+        <div class="dish options">
+          <div class="product" onclick="selectDish(this)" data-test="dish">
+            <img src="img/frango_yin_yang.png"/>
+            <div class="flex-start">
+              <h5 data-test="item-name">Frango Yin Yang</h5>
+              <p>Um pouco de batata, um pouco de salada</p>
+              <h6 data-item="item-price"> R$ 14,90 </h6>
+            </div>
+          </div>
+          <div class="product" onclick="selectDish(this)" data-test="dish">
+            <img src="img/frango_yin_yang.png"/>
+            <div class="flex-start">
+              <h5 data-test="item-name">Carne Yin Yang</h5>
+              <p>Um pouco de batata, um pouco de salada</p>
+              <h6 data-item="item-price"> R$ 18,90 </h6>
+            </div>
+          </div>
+          <div class="product" onclick="selectDish(this)" data-test="dish">
+            <img src="img/frango_yin_yang.png"/>
+            <div class="flex-start">
+              <h5 data-test="item-name">Porco Yin Yang</h5>
+              <p>Um pouco de batata, um pouco de salada</p>
+              <h6 data-item="item-price"> R$ 16,90 </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="drink-display">
+        <h2>Agora, sua bebida</h2>
+        <div class="line options drink">
+          <div class="product" onclick="selectDrink(this)" data-test="drink">
+            <img src="img/coca-cola.png"/>
+            <div class="flex-start">
+              <h5 data-test="item-name">Coquinha gelada</h5>
+              <p>Lata 350ml</p>
+              <h6 data-item="item-price"> R$ 4,90 </h6>
+            </div>
+          </div>
+          <div class="product" onclick="selectDrink(this)"  data-test="drink">
+            <img src="img/coca-cola.png"/>
+            <div class="flex-start">
+              <h5 data-test="item-name">Guaranazinho gelado</h5>
+              <p>Lata 350ml</p>
+              <h6 data-item="item-price"> R$ 3,90 </h6>
+            </div>
+          </div>
+          <div class="product" onclick="selectDrink(this)"  data-test="drink">
+            <img src="img/coca-cola.png"/>
+            <div class="flex-start">
+              <h5 data-test="item-name">Suquinho gelado</h5>
+              <p>Lata 350ml</p>
+              <h6 data-item="item-price"> R$ 5,90 </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dessert-display">
+        <h2>Por fim, sua sobremesa</h2>
+        <div class="line option dessert">
+          <div class="product" onclick="selectDessert(this)" data-test="dessert">
+            <img src="img/pudim.png"/>
+            <div class="flex-start">
+              <h5 data-test="item-name">Pudim</h5>
+              <p>Apenas pudim</p>
+              <h6 data-item="item-price"> R$ 7,90 </h6>
+            </div>
+          </div>
+          <div class="product" onclick="selectDessert(this)" data-test="dessert">
+            <img src="img/pudim.png"/>
+            <div class="flex-start">
+              <h5 data-test="item-name">Pudim</h5>
+              <p>Apenas mousse</p>
+              <h6 data-item="item-price"> R$ 8,90 </h6>
+            </div>
+          </div>
+          <div class="product" onclick="selectDessert(this)" data-test="dessert">
+            <img src="img/pudim.png"/>
+            <div class="flex-start">
+              <h5 data-test="item-name">Pudim</h5>
+              <p>Apenas brigadeirão</p>
+              <h6 data-item="item-price"> R$ 9,90 </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+    
+    <div class="footer">
+      <button id="placeOrder" type="button" onclick="sendOrder()" data-test= "order-btn" disabled>
+        Selecione os 3 itens <br/> para fechar o pedido
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>
